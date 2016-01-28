@@ -8,4 +8,4 @@ RUN apt-get update ; apt-get install -y moosefs-chunkserver nano rm -rf /var/lib
 EXPOSE 9420
 EXPOSE 9422
 
-CMD ["/bin/chmod", "-Rv 777", "/mnt/mfschunks;", "/usr/sbin/mfschunkserver", "-f", "start"]
+CMD ["/bin/chmod", "-Rv", "777", "/mnt/mfschunks;", "/usr/sbin/mfschunkserver", "-f", "start"]
