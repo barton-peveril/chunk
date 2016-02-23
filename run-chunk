@@ -1,9 +1,9 @@
 #create storage env
-/bin/mkdir /mfschunks ;
-/bin/chmod -Rv 777 /mfschunks ; 
+/bin/mkdir /mnt/chunks ;
+/bin/chmod -Rv 777 /mnt/chunks ; 
 
 #start etcd
-/usr/local/bin/run-etcd --discovery $DISCOVERY >> /var/log/etcd.log 2>&1 
+#/usr/local/bin/run-etcd --discovery $DISCOVERY >> /var/log/etcd.log 2>&1 
 
 #start chunkserver
 /usr/sbin/mfschunkserver -f start ;
